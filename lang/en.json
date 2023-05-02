@@ -1,0 +1,4 @@
+{
+    "title": "My App",
+    "greeting": "{name}, {gender}, is {age} years old!"
+}

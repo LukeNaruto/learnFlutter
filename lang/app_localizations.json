@@ -1,0 +1,10 @@
+{
+    "title": {
+      "en": "My App",
+      "zh": "我的app"
+    },
+    "greeting": {
+      "en": "Hello, {name}!",
+      "zh": "你好, {name} !"
+    }
+  }

@@ -1,0 +1,4 @@
+{
+    "title": "我的app",
+    "greeting": " {name}, 性别{gender}, 今年{age}岁 !"
+}
