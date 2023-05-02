@@ -17,6 +17,7 @@ class ThemeDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController _controller = TextEditingController();
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,12 +30,12 @@ class ThemeDemo extends StatelessWidget {
           Text('Local Headline6', style: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic, color: Colors.red)),
           Text('Local BodyText2', style: TextStyle(fontSize: 14.0, fontFamily: 'Hind', color: Colors.red)),
           SizedBox(height: 16),
-          RaisedButton(onPressed: () {}, child: Text('Global RaisedButton')),
-          FlatButton(onPressed: () {}, child: Text('Global FlatButton')),
+          ElevatedButton(onPressed: () {}, child: Text('Global RaisedButton')),
+          TextButton(onPressed: () {}, child: Text('Global FlatButton')),
           IconButton(icon: Icon(Icons.favorite), onPressed: () {}),
           SizedBox(height: 16),
-          RaisedButton(onPressed: () {}, child: Text('Local RaisedButton'), color: Colors.red),
-          FlatButton(onPressed: () {}, child: Text('Local FlatButton'), textColor: Colors.red),
+          ElevatedButton(onPressed: () {}, child: Text('Local RaisedButton'), style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.red))),
+          TextButton(onPressed: () {}, child: Text('Local FlatButton', style: TextStyle(color: Colors.red))),
           IconButton(icon: Icon(Icons.favorite), onPressed: () {}, color: Colors.red),
           SizedBox(height: 16),
           Card(

@@ -90,19 +90,19 @@ class ButtonDemo extends StatelessWidget {
                   minimumSize: MaterialStatePropertyAll(Size(150, 60)),
                   //设置水波纹的颜色
                   overlayColor: MaterialStatePropertyAll(Colors.purple))),
-          OutlinedButtonTheme(
-              data: OutlinedButtonThemeData(
-                  style: ButtonStyle(
-                      overlayColor: MaterialStatePropertyAll(Colors.pink))),
-              child: OutlinedButton(
-                  onPressed: () {
-                    print('点击OutlinedButton');
-                  },
-                  onLongPress: () {
-                    print('长按OutlinedButton');
-                  },
-                  child: Text('主题轮廓按钮'),
-                  style: ButtonStyle(
+                  OutlinedButtonTheme(
+                    data: OutlinedButtonThemeData(
+                        style: ButtonStyle(
+                            overlayColor: MaterialStatePropertyAll(Colors.pink))),
+                    child: OutlinedButton(
+                        onPressed: () {
+                          print('点击OutlinedButton');
+                        },
+                        onLongPress: () {
+                          print('长按OutlinedButton');
+                        },
+                        child: Text('主题轮廓按钮'),
+                        style: ButtonStyle(
                       overlayColor: MaterialStatePropertyAll(Colors.green)))),
           IconButton(
             onPressed: () {

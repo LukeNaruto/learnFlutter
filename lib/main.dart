@@ -42,11 +42,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 // import '11_animation/02_StaggerAmimation.dart';
 // import '11_animation/03_HeroAnimation.dart';
 
-// import '12_i18n/01_Texti18n.dart';
+import '12_i18n/01_Texti18n.dart';
 import '12_i18n/app_localizations.dart';
 
-import '13_theme/01_theme.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import '13_theme/01_theme.dart';
 
 void main() {
   runApp(MyApp());
